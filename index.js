@@ -4,7 +4,7 @@ class Polygon {
   }
   
   get countSides() {
-    let count = this.sides.length;
+    return this.sides.length;
   }
   
   get perimiter() {
