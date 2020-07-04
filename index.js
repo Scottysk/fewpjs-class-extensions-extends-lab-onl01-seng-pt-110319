@@ -17,8 +17,8 @@ class Polygon {
 class Triangle extends Polygon {
   
   get isValid() {
-    const [a, b, c] = this.sides;
-    return a < b + c && b < c + a && c < a + b ? true : false;
+    const [side1, side2, side3] = this.sides;
+    return side1 < side2 + side3 && side2 < side3 + side1 && side3 < side1 + side2 ? true : false;
   }
   
 }
