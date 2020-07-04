@@ -8,7 +8,7 @@ class Polygon {
   }
   
   get perimiter() {
-    
+    return this.sides.reduce((accumulate, side) => accumulate + side, 0);
   }
   
   
